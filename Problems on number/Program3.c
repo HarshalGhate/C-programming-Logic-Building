@@ -7,6 +7,8 @@ Input : 13
 Output : 1 (1)
 Input : 10
 Output : 10 (1 * 2 * 5) 
+Input:4
+output:2 (1*2)
 */
 
 #include<stdio.h>
