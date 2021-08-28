@@ -1,2 +1,2 @@
-# C-programming-Logic-Building
+# C-programming Problem Solving
 C programming
