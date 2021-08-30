@@ -9,6 +9,7 @@ Input : 8440
 Output : 16 (16 - 0) 
 Input : 5733 
 Output : -18 (0 - 18)
+
 */
 #include<stdio.h>
 
