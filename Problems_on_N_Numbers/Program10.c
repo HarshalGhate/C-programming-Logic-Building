@@ -1,22 +1,25 @@
 /*
-4. Accept N numbers from user and return frequency of 11 form it. 
+5. Accept N numbers from user and accept one another number as NO , 
+return frequency of NO form it.
 Input : N : 6 
- Elements : 85 66 3 15 93 88 
-Output : 0 
+ NO: 66 
+ Elements : 85 66 3 66 93 88 
+Output : 2 
 Input : N : 6 
+ NO: 12 
  Elements : 85 11 3 15 11 111 
-Output : 2
+Output : 0 
 */
 
 #include<stdio.h>
 #include<stdlib.h>
 
-int Frequency(int *Arr,int iSize)
+int Frequency(int *Arr,int iSize,int iNo)
 {
     int i=0,iCnt=0;
     for(i=0;i<iSize;i++)
     {
-        if(Arr[i]==11)
+        if(Arr[i]==iNo)
         {
             iCnt++;
         }
@@ -26,7 +29,7 @@ int Frequency(int *Arr,int iSize)
 
 int main()
 {
-    int iLength=0,i=0,iRet=0;
+    int iLength=0,i=0,iRet=0,iValue=0;
     
 
     int *p=NULL;
@@ -48,8 +51,18 @@ int main()
         scanf("%d",&p[i]);
     }
 
-    iRet=Frequency(p,iLength);
-    printf("Count of 11 : %d",iRet);    
+    printf("Elements of Array :\n");
+    for(i=0;i<iLength;i++)
+    {
+        printf("%d\t",p[i]);
+    }
+    printf("\n");
+
+    printf("Enter the number to Count Frequency:\n");
+    scanf("%d",&iValue);
+
+    iRet=Frequency(p,iLength,iValue);
+    printf("Count of %d : %d",iValue,iRet);    
     free(p);
     return 0;
 }
