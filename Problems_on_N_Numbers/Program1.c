@@ -8,7 +8,7 @@ Output : 53 (234 - 181)
 #include<stdio.h>
 #include<stdlib.h>
 
-int Display(int *Arr,int iSize)
+int Difference(int *Arr,int iSize)
 {
     int i=0,iEvenSum=0,iOddSum=0;
     for(i=0;i<iSize;i++)
@@ -41,7 +41,7 @@ int main()
         scanf("%d",&arr[i]);
     }
 
-    iRet=Display(arr,iLength);
+    iRet=Difference(arr,iLength);
     printf("Difference between summation of even elements and summation of odd elements=%d",iRet);
     free(arr);
     return 0;
