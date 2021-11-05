@@ -2,7 +2,7 @@
 3. Write a program which accept string from user and display it inn 
 reverse order. 
 Input : “MarvellouS” 
-Output : “SuollevraM” 
+Output : “SuollevraM”
 */
 
 #include<stdio.h>
